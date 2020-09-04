@@ -1,0 +1,34 @@
+body{
+    background-color: crimson;
+}
+table{
+    width: 1000px;
+    background-color: darkblue;
+    border-spacing: 10px;
+    table-layout: fixed;
+}
+caption{
+    font-family: 'DM Serif Display', serif;
+    background-image: url(./bilder/tablecloth-background-red-seamless-pattern_87543-456.jpg);
+    background-size: cover;
+    font-size: 50px;
+    color: darkblue;
+}
+th{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    background: linear-gradient(crimson, yellow);
+    padding: 10px;
+}
+td{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    background: white;
+    padding: 15px;
+    border: 4px solid yellow;
+    border-radius: 5px;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
