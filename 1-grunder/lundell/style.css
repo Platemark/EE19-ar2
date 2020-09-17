@@ -1,0 +1,27 @@
+body{
+    background-image: url(./bilder/skåne.png);
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    color: crimson; 
+    margin-left: 150px;
+}
+p{
+    font-family: 'Martel', serif;
+    font-size: 20px;
+    color: crimson;
+    background: rgba(255, 255, 255, 0.767);
+    border: 5px solid crimson;
+    border-radius: 20px;
+    width: 40%;
+    padding: 50px;
+    margin-left: 150px;
+}
+img {
+    width: 150px;
+    border: 5px solid crimson;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 150px;
+}
