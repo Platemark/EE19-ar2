@@ -1,0 +1,29 @@
+!<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leka med DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixtra med webbsidan</h1>
+        <button onclick="blirVit()">Vit</button>
+        <button onclick="blirSvart()">Svart</button>
+        
+    </div>
+    <script>
+        function blirVit() {
+            document.body.style.cssText = "background: white"; 
+
+            //Ändra på titeln
+            document.title = "Tjohoo!"
+        }
+
+        function blirSvart() {
+            document.body.style.cssText = "background: black";            
+        }
+    </script>
+</body>
+</html>
