@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Inloggning</h1>
+        <Button onclick="inloggning()">Ange lösenord</Button>
+    </div>
+    <script>
+        function inloggning() {
+            var lösenord = prompt("Ange ett lösenord");
+
+            // Om lösenordet är rätt svara Rätt!
+            if (lösenord == "1234") {
+                alert("Bra jobbat!")
+            } else {
+                alert("Fel lösenord!!! Försök igen")
+                document.body.style.cssText = "background: red;";
+                window.location.href = "https://amazon.se";
+            }
+        }
+    </script>
+</body>
+</html>
