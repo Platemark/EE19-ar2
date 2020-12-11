@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uppgift 4b</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="kontainer">
-        <h1>Engineering Flowchart</h1>
+        <h1>Uppgift 4b</h1>
     </div>
     <script>
-        // Does it move
-        var move = prompt("Does it move? (y/n)");
-        if (move == "y") {
-
-        // Should it?
-            var should = prompt("Should it (y/n)")
-            if (should == "y") {
-                alert ("No problem")
-                
+        alert("Lampan fungerar inte!")
+        var  svar1 = prompt("Är lampan inkopplad? (ja/nej)");
+        if (svar2 == "ja") {
+            var svar2 = prompt("Är glödlampan utbränd? (ja/nej)");
+            if (svar2 == "ja") {
+                alert("Köp en ny glödlampa");
             } else {
-                // Köp Silvertejp
-                location.href = "https://www.jula.se/catalog/bygg-och-farg/farg-och-fog/tejp-och-maskering/specialtejp/silvertejp-503040/"
-            }
-
-            // Should it?
-            var should = prompt("Should it? (y/n)")
-            if (should == "y") {
-                alert("No problem!");
-                // WD-40
-                location.href = "https://www.jula.se/catalog/bil-och-garage/bilvard/bilunderhall/rostlosare/multispray-621007/"
+                alert("Köp en ny lampa");
+                
             }
         } else {
-            alert("No problem")
+            alert("Koppla in lampan")
         }
     </script>
 </body>
