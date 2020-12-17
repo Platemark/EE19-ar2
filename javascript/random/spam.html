@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spam check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Spam check'</h1>
+        <button onclick="spamCheck()">Är du en människa?</button>
+    </div>
+    <script>
+        function spamCheck() {
+            var tal1 = Math.round(Math.random() * 10 + 1);
+            var tal2 = Math.round(Math.random() * 10 + 1);
+            var summa = tal1 + tal2
+            var gissning = prompt("Vad blir " + tal1 + " och " + tal2 + "?")
+            if (summa == gissning) {
+                alert("Grattis! du är inte en idiot!")
+            } else {
+                alert("Bort med er monkies!")
+            }
+        }
+    </script>
+</body>
+</html>
