@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slutbetyg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyg</h1>
+        <button onclick="slutbetyg()">Gissa Slutbetyg</button><br>
+        <input type="text" disabled>
+    </div>
+    <script>
+        // Komma åt inputrutan
+        const elementInput = document.querySelector("input");
+
+        function slutbetyg() {
+            var slumptal = Math.floor(Math.random) * 6;
+
+            elementInput.value = " Slumptalet = " + slumptal;
+
+            switch (slumptal) {
+                case 0:
+                    elementInput.value = "Du får F"
+                    break;
+                case 1:
+                    elementInput.value = "Du får E"
+                    break;
+                case 3:
+                    elementInput.value = "Du får D"
+                    break;
+                case 4:
+                    elementInput.value = "Du får C"
+                    break;
+                case 5:
+                    elementInput.value = "Du får B"
+                    break;
+                case 8:
+                    elementInput.value = "Du får A"
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
