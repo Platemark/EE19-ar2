@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loopa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Loopa</h1>
+        <button onclick="loopa()">Loopa!</button>
+        <p></p>
+    </div>
+    <script>
+        const eResultat = document.querySelector("p");
+        function loopa() {
+            
+            eResultat.textContent += "🌻";
+        }
+    </script>
+</body>
+</html>

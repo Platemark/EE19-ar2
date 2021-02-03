@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Folkrikaste land</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Folkrikaste land</h1>
+        <button onclick="loopa()">Rikaste!</button>
+    </div>
+    <script>
+        function loop() {
+            var land = "Zimbabwe"
+            while (true) {
+                var gissning = prompt("Mest folkrikaste land i europa?")
+
+                if (gissning == land) {
+                    alert("HELT JÄVLA RÄTT!")
+                    break
+                } else {
+                    alert("IQ befriad, försök igen!")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
