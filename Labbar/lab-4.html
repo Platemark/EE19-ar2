@@ -14,7 +14,7 @@
         <label>Användarnamn <input type="text" class="anamn"></label>
         <label>Lösenord <input type="password" class="lösen"></label>
         <button class="btn btn-primary">Logga in</button>
-        <button class="btn btn-warning">Kontrollera lösenordet</button>
+        <button class="btn btn-danger">Töm rutorna</button>
         <label>Svar <textarea></textarea></label>
     </div>
     <script>
@@ -30,38 +30,30 @@
 
         // Kod som körs när användaren klickar på knappen Logga in
         knappLoggaIn.addEventListener("click", function () {
+
             // Läs av användarnamnet och lagra i en lokal variabel
             var anamn = rutaAnamn.value;
-
             // Läs av lösenordet och lagra i en lokal variabel
             var lösen = rutaLösen.value;
-
             // Skriv ut användarnamnet i loggen
             console.log(anamn);
-
             // Skriv ut lösenordet i loggen
             console.log(lösen);
-
-            // Skriv ut användarnamnet i rutaSvar
-            rutaSvar.value = anamn;
-
-            // Skriv ut lösenordet i rutaSvar
-            rutaSvar.value = lösen;
-
-            // Är användarnamnet "admin" skriv ut "Användarnamn ok" i rutaSvar
-            if (anamn == "admin") {
-                rutaSvar.value = "Användarnamn ok";
-            }
-
-            // Är användarnamnet "admin" och lösenordet "super" skriv ut "Inloggad!" i rutaSvar
-            // Annars skriv ut "Något är fel!"
-            if (anamn == "admin" && lösen == "super") {
-               rutaSvar.value = "Inloggad!" 
-            } else {
-                rutaSvar.value = "Något är fel!"
-            }
-
+            // Skriv ut "Välkommen ... du är inloggad" i rutaSvar
+            rutaSvar.value = "Välkommen " + anamn + " du är inloggad";
         })
+
+
+
+        // Kod som körs när användaren klickar på knappen Töm
+        knappTöm.addEventListener("click", function () {
+            
+            // Töm alla rutor genom att skriva tomt "" i rutorna
+            rutaSvar.value = ""
+            rutaAnamn.value = ""
+            rutaLösen.value = ""
+        })
+            
     </script>
 </body>
 </html>
